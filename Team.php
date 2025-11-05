@@ -26,5 +26,14 @@ public function finalScore($parm1, $parm2) {
     
 }
 
+public function getGoalAverage() {
+    if ($this->totalGames > 0) {
+        return $this->totalGoals / $this->totalGames;   
+    }
+    else{
+        return 0;
+    }
+
+    }
 }
 ?>
